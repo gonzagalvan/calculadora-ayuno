@@ -15,8 +15,8 @@ Para ejecutar este proyecto de manera local, es necesario contar con:
 ## Pasos de instalación y ejecución
 
 1. **Clonar el repositorio**
-    git clone 
-    cd 
+    git clone https://github.com/gonzagalvan/calculadora-ayuno.git
+    cd calculadora-ayuno
 
 2. **Construcción de la imagen Docker**
 Ejecutá el siguiente comando en la raíz del proyecto para construir la imagen personalizada utilizando el Dockerfile:
