@@ -27,15 +27,15 @@ Para ejecutar este proyecto de manera local, es necesario contar con:
 
    ```docker compose up -d```
 
-2.1 **Ejecución manual con Docker CLI (Alternativa)**
-
+3. **Ejecución manual con Docker CLI (Alternativa)**
+    
     Si preferís compilar y correr el contenedor de forma tradicional sin usar Compose, ejecutá estos dos comandos:
 
    ```docker build -t calculadora-ayuno .```
 
    ```docker run -d -p 8080:80 --name app-ayuno calculadora-ayuno```
 
-4. **Verificación**
+3. **Verificación**
 
     Abrí un navegador web y accedé a la siguiente dirección para comprobar que la aplicación funciona correctamente:
 
