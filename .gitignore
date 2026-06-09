@@ -1,0 +1,16 @@
+# Archivos del sistema operativo (Windows/macOS)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuraciones locales de editores de código
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Archivos de log
+*.log

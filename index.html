@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ayuno Intermitente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Ayuno</h2>
+        
+        <label for="ultimaComida">Hora de tu última comida:</label>
+        <input type="datetime-local" id="ultimaComida">
+        
+        <label for="horasAyuno">Objetivo de ayuno:</label>
+        <select id="horasAyuno">
+            <option value="12">12 horas</option>
+            <option value="16">16 horas</option>
+            <option value="18">18 horas</option>
+            <option value="20" selected>20 horas</option>
+            <option value="24">24 horas</option>
+        </select>
+
+        <button onclick="calcularAyuno()">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
