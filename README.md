@@ -1,16 +1,17 @@
 # Calculadora de Ayuno Intermitente
 
 ## Descripción
-Aplicación web estática que permite calcular el horario exacto de finalización de un ayuno intermitente, tomando como base la última comida registrada y el objetivo en horas.
+Aplicación web estática que permite calcular el horario exacto de finalización de un ayuno intermitente, tomando como base la última comida registrada y el objetivo en horas. El proyecto cuenta con una separación limpia de responsabilidades (HTML, CSS y JavaScript) y está completamente dockerizado.
 
 ## Tecnologías utilizadas
-* Frontend: HTML5, CSS3, Vanilla JavaScript.
-* Infraestructura: Docker (Imagen Nginx versión Alpine).
+* **Frontend:** HTML5, CSS3, Vanilla JavaScript.
+* **Infraestructura:** Docker (Imagen Nginx versión Alpine).
+* **Orquestación:** Docker Compose.
 
 ## Requisitos previos
 Para ejecutar este proyecto de manera local, es necesario contar con:
 * Git
-* Docker Engine o Docker Desktop
+* Docker Desktop o Docker Engine
 
 ## Pasos de instalación y ejecución
 
@@ -20,15 +21,17 @@ Para ejecutar este proyecto de manera local, es necesario contar con:
 
     ```cd calculadora-ayuno```
 
-2. **Construcción de la imagen Docker**
+2. **Ejecución con Docker Compose**
 
-    Ejecutá el siguiente comando en la raíz del proyecto para construir la imagen personalizada utilizando el Dockerfile:
+    Para construir la imagen automáticamente, inyectar las variables de entorno y levantar el contenedor en segundo plano, ejecutá:
+
+   ```docker compose up -d```
+
+2.1 **Ejecución manual con Docker CLI (Alternativa)**
+
+    Si preferís compilar y correr el contenedor de forma tradicional sin usar Compose, ejecutá estos dos comandos:
 
    ```docker build -t calculadora-ayuno .```
-
-3. **Ejecución del contenedor**
-
-    Una vez construida la imagen de forma exitosa, levantá el contenedor mapeando el puerto 8080 de tu máquina local al puerto 80 interno del contenedor:
 
    ```docker run -d -p 8080:80 --name app-ayuno calculadora-ayuno```
 
